@@ -1,0 +1,14 @@
+Running Server Instruction
+
+Run 'npm install' to get all of the dependencies.
+Run 'node server.js'.  This should create a database and the tables needed from the csv files.
+If there are any issues with this step about finding the tables, try commenting out the 'drop table' commands from createRestaurantTable and createOperationHoursTable, running, and then adding them back in and running again.
+
+
+Running Tests
+
+Some tests have been provided.  Once the server is running, open another command prompt and go to the app directory.  Run 'npm test'.  This will run the tests I have provided.
+
+To test on your own use the following uri -> localhost:3000/api/operationHours/openStores?date={datetime} -> where {datetime} is a datetime you specify
+
+e.g. localhost:3000/api/operationHours/openStores?date=2022/10/12 14:30:00

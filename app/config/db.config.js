@@ -13,7 +13,7 @@
 // };
 
 const Sequelize = require("sequelize");
-module.exports = new Sequelize('restaurant_data', 'root', 'password', {
+module.exports = new Sequelize('challengedb', 'root', 'password', {
     host: 'localhost',
     dialect: 'mysql',
     operatorsAliases: 0,
